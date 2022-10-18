@@ -5,7 +5,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
  
-API_KEY = "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"
+API_KEY = ""
 DEFAULT_PROMPT = open("data.txt").read()
 
 @app.route('/<string:page_name>/')
