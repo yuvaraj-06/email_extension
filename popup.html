@@ -1,0 +1,148 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet'>
+
+
+<style>
+
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #df2828;
+  color: black;
+  font-size: 16px;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btn:hover {
+  background-color: black;
+  color: rgb(112, 73, 238);
+}
+
+.legend { list-style: none; }
+.legend li { float: left; margin-right: 10px; }
+.legend span { border: 1px solid #ccc; float: left; width: 12px; height: 12px; margin: 2px; }
+/* legend colors for detailed analysis */
+.legend .complex_words { background-color: #FFFFC2; }
+.legend .rude { background-color: #FBBBB9; }
+.legend .long { background-color: #C2DFFF; }
+
+.newfont {
+  font-size: 16px !important;
+  font-family: 'Roboto' !important;
+  font-weight: 400 !important;
+  }
+  
+.politejoycomplex {
+  background-color: #4CC552 !important;
+}
+
+.rudeanger {
+  background-color: #F75D59 !important;
+}
+
+.surprise {
+  background-color: #5CB3FF !important;
+}
+
+.love {
+  background-color: #0020C2 !important;
+}
+
+.fear {
+  background-color: #E0B0FF !important;
+}
+
+.sadness {
+  background-color: #FFDB58 !important;
+}
+
+.one {
+     width: 45%;
+    float: left;
+}
+
+.two {
+      width: 45%;
+      float: right;
+}
+
+mark {
+  background-color: #FBBBB9;
+  color: black; 
+}
+
+@-webkit-keyframes fade-in {
+   from   { opacity: 0; }
+   to { opacity: 1; }
+ }
+@-moz-keyframes fade-in {
+   from   { opacity: 0; }
+   to { opacity: 1; }
+}
+@-ms-keyframes fade-in {
+   from   { opacity: 0; }
+   to { opacity: 1; }
+}
+.element {
+   -webkit-animation: fade-in .3s linear 1;
+   -moz-animation: fade-in .3s linear 1;
+   -ms-animation: fade-in .3s linear 1;
+}
+
+</style>
+
+</head>
+<body>
+ 
+  <!-- <div class = "element" style = "float: right; width: 40%; height: 600px; overflow-x: hidden;"> -->
+
+<br>
+<div class="container newfont" style="width: 100%" id = "overall">
+    <h3 id='overall_heading' style = "text-align: center;"><strong>Drafty</strong>
+      <h5 id='complex_heading' style = "text-align: center;"><strong>Here is your AI Generated Email </strong> 
+
+      <!-- <span id = "overall_color" style = "color: rgb(0, 0, 0)"> 0</span> / 100</h3> -->
+</div>
+
+<br>
+<div id = "subheading">
+
+<div class="container newfont one" id = "complex" >
+    
+</div>
+
+<div class="container newfont two" id = "length">
+    
+    
+</div>
+</div>
+<br>
+<br>
+<br>
+
+<div id = "charts">
+
+<div class = "newfont one">
+
+<h5 id='word_count_heading' style = "text-align: center "><strong> </strong></h5>
+<span id = "complex_color" style = "color: rgb(0, 0, 0)"> </span>
+<canvas id = "myChart" height = "75" width = "75"></canvas>
+
+</div>
+ 
+ 
+ 
+</body>
+</html>
